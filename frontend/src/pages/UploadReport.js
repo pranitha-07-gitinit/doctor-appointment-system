@@ -23,7 +23,7 @@ function UploadReport() {
       setLoading(true);
 
       await axios.post(
-        "http://localhost:5000/api/reports/upload",
+        "https://doctor-backend-x67s.onrender.com/api/reports/upload",
         formData,
         {
           headers: {

@@ -14,7 +14,7 @@ function MyAppointments() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/appointments/my",
+        "https://doctor-backend-x67s.onrender.com/api/appointments/my",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ function MyAppointments() {
       const token = localStorage.getItem("token");
 
       const res = await axios.delete(
-        `http://localhost:5000/api/appointments/${id}`,
+        `https://doctor-backend-x67s.onrender.com/api/appointments/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -18,7 +18,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/dashboard",
+        "https://doctor-backend-x67s.onrender.com/api/dashboard",
         {
           headers: {
             Authorization: `Bearer ${token}`,

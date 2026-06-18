@@ -14,7 +14,7 @@ function MyReports() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/reports/my-reports",
+        "https://doctor-backend-x67s.onrender.com/api/reports/my-reports",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -56,7 +56,7 @@ function MyReports() {
                 </p>
 
                 <a
-                  href={`http://localhost:5000/${report.filepath}`}
+                  href={`https://doctor-backend-x67s.onrender.com${report.filepath}`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-primary"
