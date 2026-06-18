@@ -12,8 +12,8 @@ function Doctors() {
   const fetchDoctors = async () => {
     try {
       const res = await axios.get(
-        "https://doctor-backend-x67s.onrender.com/api/appointments/book"
-      );
+  "https://doctor-backend-x67s.onrender.com/api/doctors"
+);
 
       setDoctors(res.data);
     } catch (err) {
