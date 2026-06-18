@@ -25,12 +25,12 @@ router.post("/add", async (req, res) => {
 });
 
 
-// GET ALL APPROVED DOCTORS
+// GET ALL DOCTORS
 router.get("/", async (req, res) => {
   try {
-    const doctors = await Doctor.find({
-      isApproved: true
-    });
+    const doctors = await Doctor.find();
+
+    console.log("Doctors found:", doctors);
 
     res.json(doctors);
 
